@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "..\\..\\vidly\\Project- Genres Endpoint"
 		}
 	],
 	"settings": {
