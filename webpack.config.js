@@ -1,18 +1,19 @@
 const path = require('path');
-let mode = "development";
+// let mode = "development";
 
-if(process.env.NODE_ENV === "production"){
-  mode = "production";
-}
+// if (process.env.NODE_ENV === "production") {
+//   mode = "production";
+// }
 
 module.exports = {
-  mode,
+  mode: process.env.NODE_ENV === "production" ?  "production": "development",
 
   entry: {
     main: path.resolve(__dirname, './src/index.js')
   },
   output: {
-    path: path.resolve(__dirname,'dist')
+    path: path.resolve(__dirname, 'dist'),
+   filename: '[name].js'
   },
   module: {
     rules: [
@@ -20,7 +21,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader"
         }
       }
     ]

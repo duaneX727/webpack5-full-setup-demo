@@ -11,3 +11,5 @@ const rigsBee = {
   d: "riggsBeetkle"
 }
 console.log(rigsBee);
+const isBabel = !(class {}.toString().indexOf(rigsBee) === 0);
+console.log('isBabel =', isBabel);
