@@ -1,3 +1,4 @@
+import "./styles/index.scss";
 const hunkBee = {
   a: 3,
   b: 8,
