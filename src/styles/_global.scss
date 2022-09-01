@@ -1,4 +1,5 @@
 @use "variables";
+
 body {
   margin: 0;
   background-color: variables.$bg;
@@ -11,4 +12,8 @@ main {
 }
 button {
   font-size: 1.5em;
+}
+
+ul {
+  list-style-image: url("../images/sword-32x32.png");
 }

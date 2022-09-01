@@ -21,10 +21,8 @@ const Recipes = () => {
   return (
     <div>
       <h3>Current Recipe:</h3>
-      <button onClick={() => setRecipe(hunkBee)}>
-        hunkBee Recipe
-      </button>
-      <button onClick={() => setRecipe(rigsBee)}>rigsBee Recipe</button>
+      <button onClick={() => setRecipe(hunkBee)}> hunkBee Recipe </button>
+      <button onClick={() => setRecipe(rigsBee)}> rigsBee Recipe</button>
 
       <ul>
         {Object.keys(recipe).map(material => (
